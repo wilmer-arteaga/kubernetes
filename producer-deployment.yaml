@@ -16,6 +16,6 @@ spec:
       containers:
       - name: sqs-producer
         image: chankh/sqs-producer-sample
-      - env:
-        -name: QUEUE
-        -value: SQS_BLUEBIRD_CONECTA_LISTEN_SNS_FOR_CONVERSA_MESSAGE_CREATE_QA
+        env:
+          - name: QUEUE
+            value: SQS_BLUEBIRD_CONECTA_LISTEN_SNS_FOR_CONVERSA_MESSAGE_CREATE_QA
